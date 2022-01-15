@@ -19,7 +19,6 @@ function buscaPersonagem() {
         }
     }).then((response) => response.json()).then((data) => {
         personagemImg.src = data.image;
-        console.log(data.image);
         personagemImg.alt = data.name;
         personagemNome.innerHTML = data.name;
         personagemEspecie.innerHTML = data.species;
