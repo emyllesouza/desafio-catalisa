@@ -4,8 +4,14 @@ const personagemEspecie = document.querySelector('#especie');
 const personagemStatus = document.querySelector('#status');
 const botao = document.querySelector('#botao');
 
+function numeroAleatorio() {
+    return Math.floor(Math.random() * 826);
+}
+
 function buscaPersonagem() {
-    return fetch(`https://rickandmortyapi.com/api/character/1`, {
+    const personagemId = numeroAleatorio();
+
+    return fetch(`https://rickandmortyapi.com/api/character/${personagemId}`, {
         method: 'GET',
         headers: {
             Accept: 'application/json',
