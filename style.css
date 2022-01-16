@@ -26,6 +26,12 @@ p {
     font-weight: bold;
 }
 
+.personagem {
+    display: inline-block;
+    margin: auto 50px;
+    padding: 5px 5px;
+}
+
 #botao {
     background-color: #00BFFF;
     border: none;
